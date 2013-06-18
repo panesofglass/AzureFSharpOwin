@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureFSharpOwin", "AzureFSharpOwin\AzureFSharpOwin.ccproj", "{97705B09-682B-4619-A59D-6394EB0B9690}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebApiRole", "WebApiRole\WebApiRole.fsproj", "{262D1574-73AC-4029-BCF5-9C99DE74B678}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97705B09-682B-4619-A59D-6394EB0B9690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97705B09-682B-4619-A59D-6394EB0B9690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97705B09-682B-4619-A59D-6394EB0B9690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97705B09-682B-4619-A59D-6394EB0B9690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262D1574-73AC-4029-BCF5-9C99DE74B678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262D1574-73AC-4029-BCF5-9C99DE74B678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262D1574-73AC-4029-BCF5-9C99DE74B678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262D1574-73AC-4029-BCF5-9C99DE74B678}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
