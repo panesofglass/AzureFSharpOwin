@@ -29,9 +29,8 @@ type WorkerRole() =
 
         log ("Starting OWIN at " + baseUri) "Information"
 
-        let options = StartOptions()
-        options.Urls.Add(baseUri)
-        webApp <- WebApp.Start<Startup>(options)
+        let options = StartOptions(Url = baseUri)
+        webApp <- WebApplication.Start<Startup>(options)
 
         base.OnStart()
 

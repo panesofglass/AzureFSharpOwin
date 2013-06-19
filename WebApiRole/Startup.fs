@@ -8,10 +8,10 @@ open System.Web.Http
 type RouteOptions = { id: RouteParameter }
 
 type Startup() =
-    member x.Configuration(app) =
+    member x.Configuration(app: IAppBuilder) =
         let config = new HttpConfiguration()
         config.Routes.MapHttpRoute("Default", "{controller}/{id}", { id = RouteParameter.Optional }) |> ignore
-        WebApiAppBuilderExtensions.UseWebApi(app, config) |> ignore
+        app.UseWebApi(config) |> ignore
 
 type TestController() =
     inherit ApiController()
