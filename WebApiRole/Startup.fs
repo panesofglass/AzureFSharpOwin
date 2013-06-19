@@ -10,7 +10,6 @@ type RouteOptions = { id: RouteParameter }
 type Startup() =
     member x.Configuration(app) =
         let config = new HttpConfiguration()
-        config.EnableSystemDiagnosticsTracing() |> ignore
         config.Routes.MapHttpRoute("Default", "{controller}/{id}", { id = RouteParameter.Optional }) |> ignore
         WebApiAppBuilderExtensions.UseWebApi(app, config) |> ignore
 
