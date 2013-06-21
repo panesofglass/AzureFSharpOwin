@@ -5,6 +5,7 @@ open System.Net
 open System.Net.Http
 open System.Web.Http
 
+type H = StartupExtensions.OwinHandlerAsync
 type RouteOptions = { id: RouteParameter }
 
 type Startup() =
@@ -15,7 +16,7 @@ type Startup() =
         app.UseWebApi(config) |> ignore
 
         // Host a default handler
-        app.UseHandlerAsync(StartupExtensions.OwinHandlerAsync(fun req res ->
+        app.UseHandlerAsync(H(fun req res ->
             res.
                 SetHeader("ContentType", "text/plain").
                 WriteAsync("Hello, world!")
